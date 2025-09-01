@@ -1,0 +1,22 @@
+{
+  "services": {
+    "ar": "تركيب الألواح الشمسية، صيانة الأنظمة، استشارات الطاقة",
+    "en": "Solar panel installation, system maintenance, energy consulting"
+  },
+  "address": {
+    "ar": "صنعاء - شارع التحرير",
+    "en": "Sana'a - Tahrir Street"
+  },
+  "phone": {
+    "ar": "+967-777-000-000",
+    "en": "+967-777-000-000"
+  },
+  "email": {
+    "ar": "info@solarcompany.com",
+    "en": "info@solarcompany.com"
+  },
+  "working_hours": {
+    "ar": "من 8 صباحًا حتى 6 مساءً",
+    "en": "From 8 AM to 6 PM"
+  }
+}
