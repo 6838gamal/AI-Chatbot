@@ -34,7 +34,7 @@ company_data = load_company_data()
 chat_log = load_chat_log()
 
 # ---------------- استدعاء DeepSeek ----------------
-DEEPSEEK_API_KEY = "sk-e6dc4a3d127445c4b5dcf4a2c97127d3"
+DEEPSEEK_API_KEY = "sk-29ba8e07294f4b0f9b186fca898e9520"
 DEEPSEEK_API_URL = "https://api.deepseek.com/v1/chat"
 
 def ask_deepseek(prompt, context=""):
