@@ -45,7 +45,7 @@ def ask_deepseek(prompt, context=""):
     payload = {
         "model": "deepseek-chat",
         "messages": [
-            {"role": "system", "content": f"أنت مساعد ذكي لشركة طاقة شمسية. استخدم فقط المعلومات التالية:\n{context}\nيمكنك الاستنتاج داخل هذا النطاق، ولا تخترع أي معلومات خارجه."},
+            {"role": "system", "content": f"أنت مساعد ذكي لشركة طاقة شمسية. استخدم فقط المعلومات التالية:\n{context}\nيمكنك الاستنتاج داخل هذا النطاق ولا تخترع معلومات خارجها."},
             {"role": "user", "content": prompt}
         ],
         "stream": False
@@ -54,11 +54,12 @@ def ask_deepseek(prompt, context=""):
     try:
         response = requests.post(DEEPSEEK_API_URL, headers=headers, json=payload)
         result = response.json()
-        # التحقق من الحقول المختلفة حسب إصدار API
+
+        # ✅ هنا نتعامل مع أي إصدار API حر، لا استخدام choices
         if "message" in result and "content" in result["message"]:
             return result["message"]["content"]
-        elif "choices" in result and len(result["choices"]) > 0:
-            return result["choices"][0].get("message", {}).get("content", "⚠️ لم يتم الحصول على إجابة")
+        elif "text" in result:
+            return result["text"]
         else:
             return "⚠️ لم يتم الحصول على إجابة من الخادم"
     except Exception as e:
