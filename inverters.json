@@ -1,0 +1,18 @@
+[
+  {
+    "brand": "InverTech",
+    "model": "IT-10k",
+    "ac_kw": 10,
+    "efficiency": 0.96,
+    "redundancy_allowed": true,
+    "price_usd": 950
+  },
+  {
+    "brand": "VoltPro",
+    "model": "VP-25k",
+    "ac_kw": 25,
+    "efficiency": 0.97,
+    "redundancy_allowed": true,
+    "price_usd": 2200
+  }
+]

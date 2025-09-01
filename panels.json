@@ -1,0 +1,18 @@
+[
+  {
+    "brand": "SolarMax",
+    "model": "SM-450",
+    "watt_stc": 450,
+    "efficiency": 0.205,
+    "derate": 0.85,
+    "price_usd": 120
+  },
+  {
+    "brand": "SunPro",
+    "model": "SP-550",
+    "watt_stc": 550,
+    "efficiency": 0.215,
+    "derate": 0.86,
+    "price_usd": 155
+  ]
+]

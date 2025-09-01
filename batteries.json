@@ -1,0 +1,20 @@
+[
+  {
+    "brand": "PowerCell",
+    "model": "PC-10kWh",
+    "nominal_kwh": 10,
+    "voltage": 48,
+    "dod": 0.9,
+    "roundtrip_eff": 0.95,
+    "price_usd": 2700
+  },
+  {
+    "brand": "LithiumX",
+    "model": "LX-5kWh",
+    "nominal_kwh": 5,
+    "voltage": 48,
+    "dod": 0.9,
+    "roundtrip_eff": 0.93,
+    "price_usd": 1450
+  }
+]
