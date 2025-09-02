@@ -2,14 +2,14 @@
   {
     "brand": "Tesla",
     "model": "Powerwall 2",
-    "capacity_kwh": 13.5,
+    "nominal_kwh": 13.5,
     "depth_of_discharge": 0.9,
     "cost": 6000
   },
   {
     "brand": "LG Chem",
     "model": "RESU10H",
-    "capacity_kwh": 9.8,
+    "nominal_kwh": 9.8,
     "depth_of_discharge": 0.95,
     "cost": 4500
   }
