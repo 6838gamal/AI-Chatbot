@@ -2,14 +2,14 @@
   {
     "brand": "Canadian Solar",
     "model": "CS6K-300MS",
-    "wattage": 300,
+    "watt_stc": 300,
     "efficiency": 0.18,
     "cost": 150
   },
   {
     "brand": "JA Solar",
     "model": "JAM60S20",
-    "wattage": 350,
+    "watt_stc": 350,
     "efficiency": 0.20,
     "cost": 170
   }
