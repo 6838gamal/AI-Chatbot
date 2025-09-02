@@ -2,14 +2,14 @@
   {
     "brand": "SMA",
     "model": "Sunny Boy 5.0",
-    "capacity_kw": 5,
+    "ac_kw": 5,
     "efficiency": 0.97,
     "cost": 800
   },
   {
     "brand": "Huawei",
     "model": "SUN2000-10KTL",
-    "capacity_kw": 10,
+    "ac_kw": 10,
     "efficiency": 0.98,
     "cost": 1200
   }
