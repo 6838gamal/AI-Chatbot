@@ -4,6 +4,10 @@ google-generativeai
 python-dotenv
 openpyxl
 
+transformers
+optimum[onnxruntime]
+onnx
+
 faiss-cpu
 langchain
 langchain-community
