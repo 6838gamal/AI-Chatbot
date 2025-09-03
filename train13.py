@@ -4,16 +4,16 @@ import streamlit as st
 import pandas as pd
 import google.generativeai as genai
 
-#from google import genai
-
 # ---------------------------
 # تهيئة Gemini API
 # ---------------------------
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     st.error("⚠️ لم يتم العثور على مفتاح Gemini في متغيرات البيئة (GEMINI_API_KEY).")
+    client = None
 else:
-    client =    genai.configure(api_key=GEMINI_API_KEY) #genai.Client(api_key=GEMINI_API_KEY)
+    genai.configure(api_key=GEMINI_API_KEY)
+    client = genai
 
 # ---------------------------
 # إعداد الصفحة
@@ -116,12 +116,9 @@ with tabs[2]:
 
         if GEMINI_API_KEY and client:
             try:
-                response =  genai.GenerativeModel('gemini-1.5-flash')
- #client.models.generate_content(
-                   # model="gemini-1.5-flash",
-                   # contents=user_input
-                #)
-               # bot_reply = response.text
+                model = client.GenerativeModel('gemini-1.5-flash')
+                response = model.generate_content(user_input)
+                bot_reply = response.text
             except Exception as e:
                 bot_reply = f"⚠️ خطأ أثناء الاتصال بـ Gemini: {e}"
         else:
