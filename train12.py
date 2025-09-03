@@ -2,7 +2,9 @@ import os
 import json
 import streamlit as st
 import pandas as pd
-from google import genai
+import google.generativeai as genai
+
+#from google import genai
 
 # ---------------------------
 # تهيئة Gemini API
@@ -11,7 +13,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     st.error("⚠️ لم يتم العثور على مفتاح Gemini في متغيرات البيئة (GEMINI_API_KEY).")
 else:
-    client = genai.Client(api_key=GEMINI_API_KEY)
+    client =    genai.configure(api_key=GEMINI_API_KEY) #genai.Client(api_key=GEMINI_API_KEY)
 
 # ---------------------------
 # إعداد الصفحة
