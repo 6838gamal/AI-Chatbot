@@ -116,10 +116,11 @@ with tabs[2]:
 
         if GEMINI_API_KEY:
             try:
-                response = client.models.generate_content(
-                    model="gemini-1.5-flash",
-                    contents=user_input
-                )
+                response =  genai.GenerativeModel('gemini-1.5-flash')
+ #client.models.generate_content(
+                   # model="gemini-1.5-flash",
+                   # contents=user_input
+                #)
                 bot_reply = response.text
             except Exception as e:
                 bot_reply = f"⚠️ خطأ أثناء الاتصال بـ Gemini: {e}"
