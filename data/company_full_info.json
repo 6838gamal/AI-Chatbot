@@ -1,0 +1,56 @@
+{
+  "company_name": "Solar AI",
+  "identity": "We are the official AI assistant of Solar AI Company.",
+  "location": "Sana'a, Yemen",
+  "founded": "2015",
+  "vision": "To revolutionize solar energy solutions with AI-powered technology.",
+  "mission": "Provide fast, accurate, and user-friendly solar simulation and project estimation tools.",
+  "team": "Our team consists of solar engineers, AI developers, project managers, and customer support specialists.",
+  "services": [
+    "Solar energy systems design",
+    "AI-powered solar project simulation",
+    "Smart grid optimization",
+    "Consulting for solar installations"
+  ],
+  "products": [
+    {
+      "type": "Solar Panels",
+      "brands": [
+        {"brand": "BrandA", "models": ["A100", "A150"], "efficiency": [0.20, 0.22], "price": [250, 300]},
+        {"brand": "BrandB", "models": ["B100", "B150"], "efficiency": [0.21, 0.23], "price": [270, 320]}
+      ]
+    },
+    {
+      "type": "Inverters",
+      "brands": [
+        {"brand": "BrandX", "models": ["X5", "X10"], "capacity_kw": [5, 10], "price": [1000, 1800]},
+        {"brand": "BrandY", "models": ["Y5", "Y10"], "capacity_kw": [5, 10], "price": [1100, 1900]}
+      ]
+    },
+    {
+      "type": "Batteries",
+      "brands": [
+        {"brand": "BattA", "models": ["BA200", "BA300"], "capacity_kwh": [10, 15], "price": [500, 750]},
+        {"brand": "BattB", "models": ["BB200", "BB300"], "capacity_kwh": [12, 18], "price": [600, 850]}
+      ]
+    }
+  ],
+  "pricing_policy": "Pricing is available upon request. Custom quotations can be provided.",
+  "support": {
+    "email": "support@solarai.com",
+    "phone": "+967-777-444098",
+    "hours": "Sunday to Thursday, 9AM to 6PM",
+    "faq": [
+      "How to choose the right solar panel?",
+      "How to calculate battery capacity?",
+      "Warranty policies?"
+    ]
+  },
+  "branches": [
+    {"city": "Sana'a", "address": "123 Solar St."},
+    {"city": "Aden", "address": "456 Energy Ave."}
+  ],
+  "warranty": "All products come with a 5-year manufacturer warranty.",
+  "certifications": ["ISO 9001", "CE Certified", "TUV Certified"],
+  "awards": ["Best Solar Solution 2022", "Innovation in Renewable Energy 2021"]
+}
